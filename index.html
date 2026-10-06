@@ -1,224 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Benyapha Tontham - First-year DII Student at Chiang Mai University. Full-stack developer, UX/UI designer, and QA specialist.">
-  <title>Benyapha Tontham | Portfolio & Resume</title>
+  <meta name="description" content="Benyapha Tontham — Digital Industry Integration student at Chiang Mai University. A resume, portfolio, and selected robotics projects.">
+  <meta name="theme-color" content="#090b0f">
+  <title>Benyapha Tontham | Portfolio &amp; Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">BT</div>
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <main class="page-shell">
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient-glow"></div>
+      <div class="grid-texture"></div>
     </div>
-  </nav>
 
-  <main class="container">
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          <span class="first-name">Benyapha</span>
-          <span class="last-name">Tontham</span>
-        </h1>
-        <p class="hero-subtitle">
-          A first-year student majoring in Digital Industry Integration (DII) at Chiang Mai University.
-          <br>Full-stack developer • UX/UI Designer • QA Specialist
-        </p>
-        <div class="cta-buttons">
-          <a href="#works" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-        </div>
-      </div>
-    </section>
+    <div class="page-content">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Benyapha Tontham, home">BT<span>.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#works">WORKS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </header>
 
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-      <div class="section-header">
-        <h2>About Me</h2>
-        <span class="section-number">01</span>
-      </div>
-      
-      <div class="about-grid">
-        <div class="about-text">
-          <h3>เส้นทางการศึกษาและบทบาท</h3>
-          <p>I'm a first-year student at Chiang Mai University's College of Arts, Media and Technology (CAMT), pursuing Digital Industry Integration. I have a strong interest in full-stack development, user experience design, and quality assurance.</p>
-          
-          <div class="education-card">
-            <div class="ed-header">
-              <span class="ed-date">2025 — PRESENT</span>
-              <span class="ed-status">Current</span>
-            </div>
-            <h4>Chiang Mai University</h4>
-            <p class="ed-program">College of Arts, Media and Technology (CAMT)</p>
-            <p class="ed-major">Digital Industry Integration (DII) • Year 1</p>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> DIGITAL INDUSTRY INTEGRATION STUDENT</p>
+          <h1 id="hero-title">Benyapha<br><span>Tontham.</span></h1>
+          <p class="hero-intro">A first-year student majoring in DII at the College of Arts, Media and Technology, Chiang Mai University, serves in a full-stack role.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#works">VIEW MY WORK</a>
+            <a class="button button-secondary" href="#about">ABOUT ME</a>
           </div>
         </div>
 
-        <div class="code-block">
-          <pre><code><span class="keyword">class</span> <span class="class-name">Benyapha</span>:
-    <span class="attr">university</span> = <span class="string">"Chiang Mai University"</span>
-    <span class="attr">faculty</span> = <span class="string">"CAMT"</span>
-    <span class="attr">major</span> = <span class="string">"Digital Industry Integration"</span>
-    <span class="attr">year</span> = <span class="number">1</span>
+        <div class="profile-wrap">
+          <button class="profile-card" type="button" aria-label="Show introduction code" aria-pressed="false">
+            <span class="profile-card-inner">
+              <span class="profile-face profile-front">
+                <img src="assets/benyapha-profile.png" alt="Benyapha Tontham">
+                <span class="photo-caption"><span class="status-dot"></span><span>CHIANG MAI, THAILAND</span></span>
+              </span>
+              <span class="profile-face profile-back">
+                <span class="code-header">
+                  <span class="window-dots"><i></i><i></i><i></i></span>
+                  <span>introduction.py</span>
+                </span>
+                <code>class Benyapha:
+    university = "Chiang Mai University"
+    faculty = "CAMT"
+    major = "Digital Industry Integration"
+    year = 1
 
-    <span class="keyword">def</span> <span class="function">say_hello</span>(<span class="keyword">self</span>):
-        <span class="keyword">return</span> <span class="string">"Hello, I'm Benyapha Tontham"</span></code></pre>
+    def say_hello(self):
+        return "Hello, I'm Benyapha Tontham"</code>
+                <span class="flip-hint">CLICK TO RETURN TO PHOTO</span>
+              </span>
+            </span>
+          </button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ROLES SECTION -->
-    <section class="roles">
-      <h3>My Roles</h3>
-      <div class="roles-grid">
-        <div class="role-card">
-          <div class="role-number">01</div>
-          <h4>Backend</h4>
-          <p>พัฒนาและดูแลระบบหลังบ้าน ฐานข้อมูล และ API</p>
+      <section class="content-section about-section" id="about">
+        <div class="section-heading">
+          <p class="section-kicker">01 / ABOUT</p>
+          <h2>เส้นทางการศึกษาและบทบาท</h2>
         </div>
-        <div class="role-card">
-          <div class="role-number">02</div>
-          <h4>UX/UI</h4>
-          <p>ออกแบบประสบการณ์และหน้าตาที่ใช้งานได้ง่าย</p>
-        </div>
-        <div class="role-card">
-          <div class="role-number">03</div>
-          <h4>QA</h4>
-          <p>ตรวจสอบคุณภาพและความถูกต้องก่อนนำไปใช้งาน</p>
-        </div>
-      </div>
-    </section>
+        <div class="about-grid">
+          <article class="education">
+            <div class="panel-heading">
+              <span class="panel-label">EDUCATION JOURNEY</span>
+              <span class="date-label">2025 — PRESENT</span>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-date">จุดเริ่มต้น / 2025</span>
+                <h3>มหาวิทยาลัยเชียงใหม่</h3>
+                <p>วิทยาลัยศิลปะ สื่อ และเทคโนโลยี (CAMT)<br>สาขา Digital Industry Integration (DII)</p>
+              </div>
+              <div class="current-status">
+                <span class="current-dot"><i></i></span>
+                <span class="timeline-date current-label">CURRENT STATUS</span>
+                <p>ปัจจุบันกำลังศึกษา<br><strong>ชั้นปีที่ 1</strong></p>
+              </div>
+            </div>
+          </article>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills" id="skills">
-      <div class="section-header">
-        <h2>Technical Skills</h2>
-        <span class="section-number">02</span>
-      </div>
+          <article class="roles">
+            <h3 class="roles-heading">MY ROLES</h3>
+            <div class="roles-list">
+              <div class="role-row">
+                <span>01</span>
+                <div><h4>Backend</h4><p>พัฒนาและดูแลระบบหลังบ้าน ฐานข้อมูล และ API</p></div>
+              </div>
+              <div class="role-row">
+                <span>02</span>
+                <div><h4>UX/UI</h4><p>ออกแบบประสบการณ์และหน้าตาที่ใช้งานได้ง่าย</p></div>
+              </div>
+              <div class="role-row">
+                <span>03</span>
+                <div><h4>QA</h4><p>ตรวจสอบคุณภาพและความถูกต้องก่อนนำไปใช้งาน</p></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <div class="skills-category">
-        <h3>Programming Languages</h3>
+      <section class="content-section skills-section" id="skills">
+        <div class="section-heading section-heading-inline">
+          <div>
+            <p class="section-kicker">02 / TECHNICAL SKILLS</p>
+            <h2>Programming languages</h2>
+          </div>
+        </div>
         <div class="skills-grid">
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4>C</h4>
-              <span class="skill-level">Intermediate</span>
-            </div>
-            <pre><code><span class="highlight">></span> printf(<span class="string">"Benyapha Tontham"</span>);</code></pre>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4>Python</h4>
-              <span class="skill-level">Intermediate</span>
-            </div>
-            <pre><code><span class="highlight">></span> print(<span class="string">"Benyapha Tontham"</span>)</code></pre>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4>Java</h4>
-              <span class="skill-level">Fundamentals</span>
-            </div>
-            <pre><code><span class="highlight">></span> System.out.println(<span class="string">"Benyapha Tontham"</span>);</code></pre>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4>R</h4>
-              <span class="skill-level">Fundamentals</span>
-            </div>
-            <pre><code><span class="highlight">></span> print(<span class="string">"Benyapha Tontham"</span>)</code></pre>
-          </div>
+          <article class="skill-card">
+            <div class="skill-top"><div><span class="skill-dot" style="--skill-color:#6ea8ff"></span><h3>C</h3></div><span class="skill-index">01</span></div>
+            <p class="skill-level">Intermediate</p>
+            <code><span>&gt;</span> printf("Benyapha Tontham");</code>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><div><span class="skill-dot" style="--skill-color:#f4c95d"></span><h3>Python</h3></div><span class="skill-index">02</span></div>
+            <p class="skill-level">Intermediate</p>
+            <code><span>&gt;</span> print("Benyapha Tontham")</code>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><div><span class="skill-dot" style="--skill-color:#f28b6d"></span><h3>Java</h3></div><span class="skill-index">03</span></div>
+            <p class="skill-level">Fundamentals</p>
+            <code><span>&gt;</span> System.out.println("Benyapha Tontham");</code>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><div><span class="skill-dot" style="--skill-color:#70d6b3"></span><h3>R</h3></div><span class="skill-index">04</span></div>
+            <p class="skill-level">Fundamentals</p>
+            <code><span>&gt;</span> print("Benyapha Tontham")</code>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- WORKS SECTION -->
-    <section class="works" id="works">
-      <div class="section-header">
-        <h2>Selected Works</h2>
-        <span class="section-number">03</span>
-      </div>
-      <p class="works-subtitle">ผลงานที่โดดเด่น</p>
-
-      <div class="works-list">
-        <article class="work-item">
-          <div class="work-number">01</div>
-          <div class="work-content">
-            <div class="work-tag">CMRG / AI CAR</div>
+      <section class="content-section works-section" id="works">
+        <div class="section-heading section-heading-inline">
+          <div>
+            <p class="section-kicker">03 / SELECTED WORKS</p>
+            <h2>ผลงานที่โดดเด่น</h2>
+          </div>
+          <button class="add-project" type="button" aria-expanded="false" aria-controls="project-form">+ &nbsp; ADD PROJECT</button>
+        </div>
+        <form class="project-form" id="project-form" hidden>
+          <label>ชื่อผลงาน<input name="title" required placeholder="เช่น Data Analysis Project"></label>
+          <label>หมวดหมู่<input name="tag" placeholder="เช่น PYTHON / UNIVERSITY"></label>
+          <label class="description-field">รายละเอียด<textarea name="description" required placeholder="อธิบายผลงาน บทบาท และสิ่งที่ได้เรียนรู้"></textarea></label>
+          <button class="button button-primary save-project" type="submit">SAVE PROJECT</button>
+        </form>
+        <div class="projects-grid" id="projects-list">
+          <article class="project-card">
+            <img src="assets/cmrg-ai-car.jpg" alt="Autonomous car at the CMRG AI Car competition">
+            <span class="project-number">01</span>
+            <span class="project-tag">CMRG / AI CAR</span>
             <h3>CMRG AI Car Competition</h3>
             <p>เข้าร่วมการแข่งขัน CMRG รายการ AI Car โดยร่วมทดสอบและปรับการทำงานของรถให้สามารถตรวจจับเส้นทาง วิ่งตามสนาม และผ่านเส้นทางที่กำหนดได้อย่างต่อเนื่อง</p>
-            <div class="work-result">
-              <strong>RESULT:</strong> วิ่งครบ 1 รอบสนามภายใน 2 นาที 32 วินาที
-            </div>
-            <div class="work-tags">
-              <span>AI</span>
-              <span>Robotics</span>
-              <span>Testing</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-number">02</div>
-          <div class="work-content">
-            <div class="work-tag">TRAINING / ROBOTICS</div>
+            <div class="project-result"><span>RESULT</span><p>วิ่งครบ 1 รอบสนามภายใน 2 นาที 32 วินาที</p></div>
+            <span class="project-rule"></span>
+          </article>
+          <article class="project-card">
+            <img src="assets/robot-training-competition.jpg" alt="Hands-on robotics training and competition">
+            <span class="project-number">02</span>
+            <span class="project-tag">TRAINING / ROBOTICS</span>
             <h3>การแข่งขันและอบรมหุ่นยนต์ สวมช.</h3>
             <p>เข้าร่วมกิจกรรมการแข่งขันและการอบรมด้านหุ่นยนต์ ฝึกการควบคุมรถหุ่นยนต์ การทดสอบการทำงานจริงบนสนาม และเรียนรู้การแก้ปัญหาเฉพาะหน้าระหว่างการปฏิบัติ</p>
-            <div class="work-tags">
-              <span>Robotics</span>
-              <span>Troubleshooting</span>
-              <span>Hands-on</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-      <div class="section-header">
-        <h2>Get In Touch</h2>
-        <span class="section-number">04</span>
-      </div>
-      
-      <div class="contact-content">
-        <p>I'm always open to new opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
-        
-        <div class="contact-info">
-          <div class="contact-item">
-            <strong>Email:</strong>
-            <a href="mailto:benyapha.tontham@camt.cmu.ac.th">benyapha.tontham@camt.cmu.ac.th</a>
-          </div>
-          <div class="contact-item">
-            <strong>Location:</strong>
-            <p>Chiang Mai, Thailand</p>
-          </div>
-          <div class="contact-item">
-            <strong>Social:</strong>
-            <div class="social-links">
-              <a href="https://github.com/Benyapha-tontham" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-          </div>
+            <span class="project-rule"></span>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <footer class="site-footer" id="contact">
+        <p class="footer-name">BENYAPHA TONTHAM</p>
+        <div class="footer-links">
+          <a href="mailto:benyapha2802@gmail.com">Email: benyapha2802@gmail.com</a>
+          <a href="https://www.instagram.com/_.benyapha.__/" target="_blank" rel="noopener noreferrer">Instagram: _.benyapha.__</a>
+          <a href="https://www.facebook.com/search/top/?q=Benyapha%20Tontham" target="_blank" rel="noopener noreferrer">Facebook: Benyapha Tontham</a>
+        </div>
+        <p>CHIANG MAI, THAILAND</p>
+      </footer>
+    </div>
   </main>
-
-  <footer class="footer">
-    <p>&copy; 2025 Benyapha Tontham. All rights reserved.</p>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
